@@ -1,25 +1,21 @@
-package 'nano'
+# ~/cookbooks/workstation/recipes/setup.rb
 
+package 'nano'
+# or package 'vim-enhanced'
 package 'ntp'
 
 package 'tree' do
-  action :install
+	action :install
 end
 
 package 'git' do
-  action :install
-
+	action :install
 end
-service 'ntpd'  do
-  action  [:enable, :start]
-end
-
-#print statement "I have 4 apples"
-#apple_count = 4 apples
-#puts " i have #{apple_count} apples"
 
 template '/etc/motd' do
   source 'motd.erb'
-  action :create
+	variables(
+		:name => 'jpriolo'
+	)
+	action :create
 end
-

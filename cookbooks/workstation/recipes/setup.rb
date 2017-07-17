@@ -18,16 +18,8 @@ end
 #apple_count = 4 apples
 #puts " i have #{apple_count} apples"
 
-file '/etc/motd' do
-  content "This server is the property of Joseph Priolo
-  HOSTNAME: #{node['hostname']}
-  IPADDRESS: #{node['ipaddress']}
-  CPU: #{node['cpu']['0']['mhz']}
-  MEMORY: #{node['memory']['total']}
-  "
+template '/etc/motd' do
+  source 'motd.erb'
   action :create
-#  owner 'root'
-#  group 'root'
-#  mode  '777'
 end
 

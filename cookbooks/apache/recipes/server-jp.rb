@@ -1,5 +1,10 @@
 # ~/cookbooks/apache/recipes/server.rb
 
+log 'log-jp' do
+  message 'a message add to the log'
+  level :info
+end
+
 package 'vim-enhanced' do
   action :install
 end

@@ -1,0 +1,30 @@
+I, [2017-07-18T22:27:29.524597 #4039]  INFO -- Kitchen: -----> Starting Kitchen (v1.13.2)
+E, [2017-07-18T22:27:29.524859 #4039] ERROR -- Kitchen: ------Exception-------
+E, [2017-07-18T22:27:29.524886 #4039] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2017-07-18T22:27:29.524900 #4039] ERROR -- Kitchen: Message: Kitchen YAML file /home/centos/chef-fundamentals/.kitchen.yml does not exist.
+E, [2017-07-18T22:27:29.524911 #4039] ERROR -- Kitchen: ----------------------
+E, [2017-07-18T22:27:29.524921 #4039] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-07-18T22:27:29.524931 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/loader/yaml.rb:74:in `read'
+E, [2017-07-18T22:27:29.524941 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:154:in `data'
+E, [2017-07-18T22:27:29.524951 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:133:in `suites'
+E, [2017-07-18T22:27:29.524961 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:184:in `filter_instances'
+E, [2017-07-18T22:27:29.524970 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:143:in `build_instances'
+E, [2017-07-18T22:27:29.524980 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/config.rb:119:in `instances'
+E, [2017-07-18T22:27:29.524989 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2017-07-18T22:27:29.524999 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2017-07-18T22:27:29.525008 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:38:in `block in call'
+E, [2017-07-18T22:27:29.525018 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-07-18T22:27:29.525039 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/command/action.rb:37:in `call'
+E, [2017-07-18T22:27:29.525070 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:56:in `perform'
+E, [2017-07-18T22:27:29.525080 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:186:in `block (2 levels) in <class:CLI>'
+E, [2017-07-18T22:27:29.525089 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-07-18T22:27:29.525097 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-07-18T22:27:29.525106 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-07-18T22:27:29.525115 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-07-18T22:27:29.525124 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-07-18T22:27:29.525133 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-07-18T22:27:29.525141 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2017-07-18T22:27:29.525150 #4039] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.13.2/bin/kitchen:13:in `<top (required)>'
+E, [2017-07-18T22:27:29.525159 #4039] ERROR -- Kitchen: /bin/kitchen:21:in `load'
+E, [2017-07-18T22:27:29.525167 #4039] ERROR -- Kitchen: /bin/kitchen:21:in `<main>'
+E, [2017-07-18T22:27:29.525182 #4039] ERROR -- Kitchen: ----End Backtrace-----

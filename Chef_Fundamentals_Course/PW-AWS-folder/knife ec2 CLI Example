@@ -1,0 +1,1 @@
+knife ec2 server create -I ami-3c39686e -r "role[tomcatwebapp]" -Z ap-southeast-1a --groups Chef-SecGrp -S chef -i chef.pem -f m1.medium -A 'AKIXXXXXXXXXXXXXXXXXX' -K "XXXXXXXXXXXXXXXXXXXXXXX" --region ap-southeast-1 --ssh-user ubuntu

@@ -1,0 +1,1 @@
+knife ec2 server create -I ami-f4533694 --run-list "role[client-role]" -Z us-west-2c --security-group-id sg-5f389c25 -S PW2_KeyPair01 -i PW2_KeyPair01.pem -f t2.micro --aws-access-key-id 'AKIAI7LDY7DO7ZW4CHDA' -K "1dfGF2wXDmKRLqykt0uRqYe6YaGjVcbMfoZtjF+f" --region us-west-2 --ssh-user centos  -N 'TestNode' --subnet 'subnet-2109b27a'
